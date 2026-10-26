@@ -112,14 +112,16 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 ### Recently
 
 <!-- ACTIVITY:START -->
-- Building BuildForge, an AI failure-analysis plugin for Jenkins
-- Working on EaseMySSH and the centralized WAF monitoring platform
+**Week of 19 Oct 2026**
+- Shipped BuildForge 2.1 to 2.2.1: an alerts bell for pipelines that keep failing (who started the build and who committed), plus a new logo. CI now builds the Jenkins plugin against the current LTS.
+- Built EaseMySSH, a Windows tray app that starts and stops SSH sessions and SOCKS tunnels in one click. Dark title bar and dark tray menu now work, and a CI check guards the script.
+- Rebuilt this profile with self-hosted stats cards and a contribution snake.
 <!-- ACTIVITY:END -->
 
 ### Weekly build
 
 <!-- WEEKLY:START -->
-Every week I ship a small open-source DevSecOps tool. The first one is a WAF audit-log analyzer.
+Every week I build a small open-source DevSecOps tool. In the workshop now: **waflens** (WAF audit-log analyzer that flags likely false positives) and **dockerfile-doctor** (Dockerfile security and image-size linter).
 <!-- WEEKLY:END -->
 
 ---
