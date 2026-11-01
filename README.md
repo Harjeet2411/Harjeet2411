@@ -49,6 +49,8 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 
 | Project | About |
 |---|---|
+| [Rag-Api-with-FAST-API](https://github.com/Harjeet2411/Rag-Api-with-FAST-API) | RAG API over my profile: ChromaDB retrieval, local Ollama model, FastAPI endpoints with multi-user documents |
+| [Rag-Api-Ollama](https://github.com/Harjeet2411/Rag-Api-Ollama) | Run LLMs locally with Ollama, plus a custom coding-tutor model built from a Modelfile |
 | [Hukum-AI-Video-Editor](https://github.com/Harjeet2411/Hukum-AI-Video-Editor) | AI-assisted video editor |
 | [Capstone-Devops](https://github.com/Harjeet2411/Capstone-Devops) | DevOps capstone: pipeline, containers and infrastructure end to end |
 | [DSA-Visualizer](https://github.com/Harjeet2411/DSA-Visualizer) | Interactive data structures and algorithms visualizer |
@@ -80,6 +82,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 **Code** &nbsp;
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -112,6 +115,11 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 ### Recently
 
 <!-- ACTIVITY:START -->
+**Week of 26 Oct 2026**
+- Built a local RAG API: profile chunks embedded with nomic-embed-text into ChromaDB, answers from a local qwen2.5 model through FastAPI, with a `POST /documents` endpoint for more than one user.
+- Ran LLMs locally with Ollama and built a custom coding-tutor model from a Modelfile.
+- BuildForge CI now tests on Python 3.8 and 3.13 and runs shellcheck on the build script. EaseMySSH rotates its log file once it passes 1 MB.
+
 **Week of 19 Oct 2026**
 - Shipped BuildForge 2.1 to 2.2.1: an alerts bell for pipelines that keep failing (who started the build and who committed), plus a new logo. CI now builds the Jenkins plugin against the current LTS.
 - Built EaseMySSH, a Windows tray app that starts and stops SSH sessions and SOCKS tunnels in one click. Dark title bar and dark tray menu now work, and a CI check guards the script.
