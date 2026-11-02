@@ -129,7 +129,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 ### Weekly build
 
 <!-- WEEKLY:START -->
-Every week I build a small open-source DevSecOps tool. In the workshop now: **waflens** (WAF audit-log analyzer that flags likely false positives) and **dockerfile-doctor** (Dockerfile security and image-size linter).
+Every week I build a small open-source DevSecOps tool. In the workshop now: **waflens** (WAF audit-log analyzer that flags likely false positives), **dockerfile-doctor** (Dockerfile security and image-size linter) and **k8s-cost-peek** (prices Kubernetes CPU and memory requests per namespace or team from `kubectl` output).
 <!-- WEEKLY:END -->
 
 ---
