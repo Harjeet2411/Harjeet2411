@@ -115,15 +115,15 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 ### Recently
 
 <!-- ACTIVITY:START -->
+**Week of 2 Nov 2026**
+- Built k8s-cost-peek: prices Kubernetes CPU and memory requests per namespace or team straight from `kubectl` output, counting init containers and sidecars the way the scheduler does, with a CI budget check.
+- Tightened lint on the WAF platform (FastAPI-aware bugbear rules, flake8-comprehensions) and fixed what it found.
+- BuildForge's agent CLI reports a missing log file cleanly. EaseMySSH skips repeated server names instead of mixing up their state.
+
 **Week of 26 Oct 2026**
 - Built a local RAG API: profile chunks embedded with nomic-embed-text into ChromaDB, answers from a local qwen2.5 model through FastAPI, with a `POST /documents` endpoint for more than one user.
 - Ran LLMs locally with Ollama and built a custom coding-tutor model from a Modelfile.
 - BuildForge CI now tests on Python 3.8 and 3.13 and runs shellcheck on the build script. EaseMySSH rotates its log file once it passes 1 MB.
-
-**Week of 19 Oct 2026**
-- Shipped BuildForge 2.1 to 2.2.1: an alerts bell for pipelines that keep failing (who started the build and who committed), plus a new logo. CI now builds the Jenkins plugin against the current LTS.
-- Built EaseMySSH, a Windows tray app that starts and stops SSH sessions and SOCKS tunnels in one click. Dark title bar and dark tray menu now work, and a CI check guards the script.
-- Rebuilt this profile with self-hosted stats cards and a contribution snake.
 <!-- ACTIVITY:END -->
 
 ### Weekly build
