@@ -118,7 +118,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 **Week of 2 Nov 2026**
 - Built k8s-cost-peek: prices Kubernetes CPU and memory requests per namespace or team straight from `kubectl` output, counting init containers and sidecars the way the scheduler does, with a CI budget check.
 - Tightened lint on the WAF platform (FastAPI-aware bugbear rules, flake8-comprehensions) and fixed what it found.
-- BuildForge's agent CLI reports a missing log file cleanly. EaseMySSH skips repeated server names instead of mixing up their state.
+- BuildForge's agent now names the variable when a setting in its environment is invalid (with new config tests), and reports a missing log file cleanly. EaseMySSH skips repeated server names instead of mixing up their state.
 
 **Week of 26 Oct 2026**
 - Built a local RAG API: profile chunks embedded with nomic-embed-text into ChromaDB, answers from a local qwen2.5 model through FastAPI, with a `POST /documents` endpoint for more than one user.
