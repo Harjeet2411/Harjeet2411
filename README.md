@@ -117,7 +117,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 <!-- ACTIVITY:START -->
 **Week of 2 Nov 2026**
 - Built k8s-cost-peek: prices Kubernetes CPU and memory requests per namespace or team straight from `kubectl` output, counting init containers and sidecars the way the scheduler does, with a CI budget check.
-- Tightened lint on the WAF platform (FastAPI-aware bugbear rules, flake8-comprehensions) and fixed what it found.
+- WAF platform API now rejects unknown status, type and risk filters with a clear 422 instead of an empty list that looks like "nothing pending". Also tightened its lint (FastAPI-aware bugbear rules, flake8-comprehensions).
 - BuildForge's agent now names the variable when a setting in its environment is invalid (with new config tests), and reports a missing log file cleanly. EaseMySSH skips repeated server names instead of mixing up their state.
 
 **Week of 26 Oct 2026**
