@@ -117,8 +117,8 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 <!-- ACTIVITY:START -->
 **Week of 2 Nov 2026**
 - Built k8s-cost-peek: prices Kubernetes CPU and memory requests per namespace or team straight from `kubectl` output, counting init containers and sidecars the way the scheduler does, with a CI budget check.
-- WAF platform API now rejects unknown status, type and risk filters with a clear 422 instead of an empty list that looks like "nothing pending". Also tightened its lint (FastAPI-aware bugbear rules, flake8-comprehensions).
-- BuildForge's agent now names the variable when a setting in its environment is invalid (with new config tests), and reports a missing log file cleanly. EaseMySSH skips repeated server names instead of mixing up their state.
+- WAF platform API now rejects unknown status, type and risk filters with a clear 422 instead of an empty list that looks like "nothing pending". Its audit CSV export now neutralises spreadsheet formulas (CSV injection) and rejects a reversed date range. Also tightened its lint (FastAPI-aware bugbear rules, flake8-comprehensions).
+- BuildForge's agent now names the variable when a setting in its environment is invalid, including a bad listen address or an unknown send or deck mode (with new config tests), and reports a missing log file cleanly. EaseMySSH skips repeated server names instead of mixing up their state.
 
 **Week of 26 Oct 2026**
 - Built a local RAG API: profile chunks embedded with nomic-embed-text into ChromaDB, answers from a local qwen2.5 model through FastAPI, with a `POST /documents` endpoint for more than one user.
