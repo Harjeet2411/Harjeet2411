@@ -49,6 +49,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 
 | Project | About |
 |---|---|
+| [harjeetjl-portfolio](https://github.com/Harjeet2411/harjeetjl-portfolio) | My interactive 3D portfolio, [live on GitHub Pages](https://harjeet2411.github.io/harjeetjl-portfolio/) |
 | [Rag-Api-with-FAST-API](https://github.com/Harjeet2411/Rag-Api-with-FAST-API) | RAG API over my profile: ChromaDB retrieval, local Ollama model, FastAPI endpoints with multi-user documents |
 | [Rag-Api-Ollama](https://github.com/Harjeet2411/Rag-Api-Ollama) | Run LLMs locally with Ollama, plus a custom coding-tutor model built from a Modelfile |
 | [Hukum-AI-Video-Editor](https://github.com/Harjeet2411/Hukum-AI-Video-Editor) | AI-assisted video editor |
@@ -129,7 +130,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 ### Weekly build
 
 <!-- WEEKLY:START -->
-Every week I build a small open-source DevSecOps tool. In the workshop now: **waflens** (WAF audit-log analyzer that flags likely false positives), **dockerfile-doctor** (Dockerfile security and image-size linter) and **k8s-cost-peek** (prices Kubernetes CPU and memory requests per namespace or team from `kubectl` output).
+Every week I build a small open-source DevSecOps tool. In the workshop now: **waflens** (WAF audit-log analyzer that flags likely false positives), **dockerfile-doctor** (Dockerfile security and image-size linter) **k8s-cost-peek** (prices Kubernetes CPU and memory requests per namespace or team from `kubectl` output) and **gha-pinner** (pins GitHub Actions to commit SHAs and fails CI when one is left on a tag).
 <!-- WEEKLY:END -->
 
 ---
