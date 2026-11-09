@@ -120,15 +120,15 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 ### Recently
 
 <!-- ACTIVITY:START -->
+**Week of 9 Nov 2026**
+- Published four weekly DevSecOps tools: [waflens](https://github.com/Harjeet2411/waflens), [dockerfile-doctor](https://github.com/Harjeet2411/dockerfile-doctor), [k8s-cost-peek](https://github.com/Harjeet2411/k8s-cost-peek) and the new [gha-pinner](https://github.com/Harjeet2411/gha-pinner), which pins GitHub Actions to commit SHAs and fails CI when one is left on a tag.
+- WAF platform API: the changes list can now be filtered by status and AWS account, with a configurable limit, so older changes in one account are reachable.
+- BuildForge's agent now refuses a runner or Teams URL without http(s), negative counts and a zero timeout at startup instead of failing at the first build.
+
 **Week of 2 Nov 2026**
 - Built k8s-cost-peek: prices Kubernetes CPU and memory requests per namespace or team straight from `kubectl` output, counting init containers and sidecars the way the scheduler does, with a CI budget check.
 - WAF platform API now rejects unknown status, type and risk filters with a clear 422 instead of an empty list that looks like "nothing pending". Its audit CSV export now neutralises spreadsheet formulas (CSV injection) and rejects a reversed date range. Repeat allow-list adds and deactivations now get a clear 409 instead of a 500 or a misleading audit entry. Also tightened its lint (FastAPI-aware bugbear rules, flake8-comprehensions).
 - BuildForge's agent now names the variable when a setting in its environment is invalid, including a bad listen address, an unknown send or deck mode, a misspelt Teams alert category, an on/off typo or a match threshold outside 0-1 (with new config tests), and reports a missing log file cleanly. EaseMySSH skips repeated server names instead of mixing up their state, and a bad tunnel port no longer stops the server list from loading.
-
-**Week of 26 Oct 2026**
-- Built a local RAG API: profile chunks embedded with nomic-embed-text into ChromaDB, answers from a local qwen2.5 model through FastAPI, with a `POST /documents` endpoint for more than one user.
-- Ran LLMs locally with Ollama and built a custom coding-tutor model from a Modelfile.
-- BuildForge CI now tests on Python 3.8 and 3.13 and runs shellcheck on the build script. EaseMySSH rotates its log file once it passes 1 MB.
 <!-- ACTIVITY:END -->
 
 ### Weekly build
