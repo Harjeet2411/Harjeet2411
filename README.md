@@ -124,6 +124,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 - Published four weekly DevSecOps tools: [waflens](https://github.com/Harjeet2411/waflens), [dockerfile-doctor](https://github.com/Harjeet2411/dockerfile-doctor), [k8s-cost-peek](https://github.com/Harjeet2411/k8s-cost-peek) and the new [gha-pinner](https://github.com/Harjeet2411/gha-pinner), which pins GitHub Actions to commit SHAs and fails CI when one is left on a tag.
 - WAF platform API: the changes list can now be filtered by status and AWS account, with a configurable limit, so older changes in one account are reachable.
 - BuildForge's agent now refuses a runner or Teams URL without http(s), negative counts and a zero timeout at startup instead of failing at the first build.
+- WAF platform registry no longer audits an account update that changes nothing and drops repeated regions. EaseMySSH ignores a tunnel port that two servers share and logs a tunnel it fails to stop. The algorithm visualizer's undo history and sorting views got their React state handling fixed.
 
 **Week of 2 Nov 2026**
 - Built k8s-cost-peek: prices Kubernetes CPU and memory requests per namespace or team straight from `kubectl` output, counting init containers and sidecars the way the scheduler does, with a CI budget check.
