@@ -125,6 +125,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 - WAF platform API: the changes list can now be filtered by status and AWS account, with a configurable limit, so older changes in one account are reachable.
 - BuildForge's agent now refuses a runner or Teams URL without http(s), negative counts and a zero timeout at startup instead of failing at the first build.
 - WAF platform API: the approvals and campaigns lists now accept a validated limit. BuildForge's Teams alert no longer titles a test failure "Test failure failure". The algorithm visualizer's graph canvas now recolours nodes when the current or explored node changes.
+- Build-Forge's agent gained tests for its `check` command and its Kiro runner client (HTTP errors, bad JSON, unreachable runner). WAF platform docs: the changelog now records the API input-validation changes, and the entity type filter lists all eight accepted types. EaseMySSH skips a background server whose log file name would collide with another's. The sorting visualizer's helpers moved out of its hook.
 - WAF platform registry no longer audits an account update that changes nothing and drops repeated regions. EaseMySSH ignores a tunnel port that two servers share and logs a tunnel it fails to stop. The algorithm visualizer's undo history and sorting views got their React state handling fixed.
 
 **Week of 2 Nov 2026**
