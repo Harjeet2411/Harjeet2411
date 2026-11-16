@@ -120,6 +120,10 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 ### Recently
 
 <!-- ACTIVITY:START -->
+**Week of 16 Nov 2026**
+- Built tf-drift-report, the fifth weekly tool: turns `terraform show -json` plan output into a short drift report (text or a Markdown pull request comment), lists what will be destroyed or replaced with databases and buckets first, never prints sensitive values and can fail CI on drift or destroys. It is ready and will be published here once its repository exists.
+- The algorithm visualizer lost over 1,300 lines of unused components, got `typecheck` and `lint` scripts, and its learning roadmap no longer rebuilds its static algorithm lists on every render. EaseMySSH now disposes the graphics objects behind its tray icons and shares one tooltip across rows instead of making one per row on every reload.
+
 **Week of 9 Nov 2026**
 - Published four weekly DevSecOps tools: [waflens](https://github.com/Harjeet2411/waflens), [dockerfile-doctor](https://github.com/Harjeet2411/dockerfile-doctor), [k8s-cost-peek](https://github.com/Harjeet2411/k8s-cost-peek) and the new [gha-pinner](https://github.com/Harjeet2411/gha-pinner), which pins GitHub Actions to commit SHAs and fails CI when one is left on a tag.
 - WAF platform API: the changes list can now be filtered by status and AWS account, with a configurable limit, so older changes in one account are reachable.
@@ -130,11 +134,6 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 - WAF platform: the endpoints list now rejects an unknown `waf_status` filter instead of returning an empty list. Build-Forge's agent gained tests for log cleaning, stage detection and error fingerprints, and for its SQLite store (one incident per build, rebuild tracking, pruning, upgrading an old database).
 - The algorithm visualizer's CI now runs eslint and has `typecheck` and `lint` scripts, and EaseMySSH says "1 server" instead of "1 servers" in its window.
 - WAF platform registry no longer audits an account update that changes nothing and drops repeated regions. EaseMySSH ignores a tunnel port that two servers share and logs a tunnel it fails to stop. The algorithm visualizer's undo history and sorting views got their React state handling fixed.
-
-**Week of 2 Nov 2026**
-- Built k8s-cost-peek: prices Kubernetes CPU and memory requests per namespace or team straight from `kubectl` output, counting init containers and sidecars the way the scheduler does, with a CI budget check.
-- WAF platform API now rejects unknown status, type and risk filters with a clear 422 instead of an empty list that looks like "nothing pending". Its audit CSV export now neutralises spreadsheet formulas (CSV injection) and rejects a reversed date range. Repeat allow-list adds and deactivations now get a clear 409 instead of a 500 or a misleading audit entry. Also tightened its lint (FastAPI-aware bugbear rules, flake8-comprehensions).
-- BuildForge's agent now names the variable when a setting in its environment is invalid, including a bad listen address, an unknown send or deck mode, a misspelt Teams alert category, an on/off typo or a match threshold outside 0-1 (with new config tests), and reports a missing log file cleanly. EaseMySSH skips repeated server names instead of mixing up their state, and a bad tunnel port no longer stops the server list from loading.
 <!-- ACTIVITY:END -->
 
 ### Weekly build
