@@ -122,6 +122,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 <!-- ACTIVITY:START -->
 **Week of 16 Nov 2026**
 - Built tf-drift-report, the fifth weekly tool: turns `terraform show -json` plan output into a short drift report (text or a Markdown pull request comment), lists what will be destroyed or replaced with databases and buckets first, never prints sensitive values and can fail CI on drift or destroys. It is ready and will be published here once its repository exists.
+- The algorithm visualizer's interactive canvas now redraws when its edges change, and three unused dependencies (zod, react-query, hookform resolvers) were removed. EaseMySSH shows an error instead of failing silently when Edit servers, Reload or Logs cannot run, and its CI workflow pins its actions to commit SHAs.
 - The algorithm visualizer lost over 1,300 lines of unused components, got `typecheck` and `lint` scripts, and its learning roadmap no longer rebuilds its static algorithm lists on every render. EaseMySSH now disposes the graphics objects behind its tray icons and shares one tooltip across rows instead of making one per row on every reload.
 
 **Week of 9 Nov 2026**
