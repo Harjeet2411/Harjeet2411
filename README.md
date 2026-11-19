@@ -125,6 +125,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 - The algorithm visualizer's interactive canvas now redraws when its edges change, and three unused dependencies (zod, react-query, hookform resolvers) were removed. EaseMySSH shows an error instead of failing silently when Edit servers, Reload or Logs cannot run, and its CI workflow pins its actions to commit SHAs.
 - The algorithm visualizer lost over 1,300 lines of unused components, got `typecheck` and `lint` scripts, and its learning roadmap no longer rebuilds its static algorithm lists on every render. EaseMySSH now disposes the graphics objects behind its tray icons and shares one tooltip across rows instead of making one per row on every reload.
 - The algorithm visualizer's graph canvas now redraws when its size changes, and its algorithm runner resets on a stable dependency list instead of an incomplete one.
+- The algorithm visualizer's graph pages now number their exploration steps from the latest list, so a stale render can no longer repeat a step number.
 
 **Week of 9 Nov 2026**
 - Published four weekly DevSecOps tools: [waflens](https://github.com/Harjeet2411/waflens), [dockerfile-doctor](https://github.com/Harjeet2411/dockerfile-doctor), [k8s-cost-peek](https://github.com/Harjeet2411/k8s-cost-peek) and the new [gha-pinner](https://github.com/Harjeet2411/gha-pinner), which pins GitHub Actions to commit SHAs and fails CI when one is left on a tag.
