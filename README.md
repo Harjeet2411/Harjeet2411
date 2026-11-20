@@ -51,6 +51,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 |---|---|
 | [harjeetjl-portfolio](https://github.com/Harjeet2411/harjeetjl-portfolio) | My interactive 3D portfolio, [live on GitHub Pages](https://harjeet2411.github.io/harjeetjl-portfolio/) |
 | [gha-pinner](https://github.com/Harjeet2411/gha-pinner) | Pins GitHub Actions to commit SHAs and fails CI when one is left on a movable tag |
+| [tf-drift-report](https://github.com/Harjeet2411/tf-drift-report) | Turns `terraform show -json` plan output into a short drift report, with destroys and replaces listed first and sensitive values never printed |
 | [k8s-cost-peek](https://github.com/Harjeet2411/k8s-cost-peek) | Prices Kubernetes CPU and memory requests per namespace or team from `kubectl` output, with a CI budget check |
 | [dockerfile-doctor](https://github.com/Harjeet2411/dockerfile-doctor) | Dockerfile security and image-size linter with fix suggestions and SARIF output |
 | [waflens](https://github.com/Harjeet2411/waflens) | Summarises ModSecurity/Coraza WAF audit logs and flags likely false positives |
@@ -121,7 +122,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 
 <!-- ACTIVITY:START -->
 **Week of 16 Nov 2026**
-- Built tf-drift-report, the fifth weekly tool: turns `terraform show -json` plan output into a short drift report (text or a Markdown pull request comment), lists what will be destroyed or replaced with databases and buckets first, never prints sensitive values and can fail CI on drift or destroys. It is ready and will be published here once its repository exists.
+- Built tf-drift-report, the fifth weekly tool: turns `terraform show -json` plan output into a short drift report (text or a Markdown pull request comment), lists what will be destroyed or replaced with databases and buckets first, never prints sensitive values and can fail CI on drift or destroys. It is now published as [tf-drift-report](https://github.com/Harjeet2411/tf-drift-report).
 - The algorithm visualizer's interactive canvas now redraws when its edges change, and three unused dependencies (zod, react-query, hookform resolvers) were removed. EaseMySSH shows an error instead of failing silently when Edit servers, Reload or Logs cannot run, and its CI workflow pins its actions to commit SHAs.
 - The algorithm visualizer lost over 1,300 lines of unused components, got `typecheck` and `lint` scripts, and its learning roadmap no longer rebuilds its static algorithm lists on every render. EaseMySSH now disposes the graphics objects behind its tray icons and shares one tooltip across rows instead of making one per row on every reload.
 - The algorithm visualizer's graph canvas now redraws when its size changes, and its algorithm runner resets on a stable dependency list instead of an incomplete one.
@@ -142,7 +143,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 ### Weekly build
 
 <!-- WEEKLY:START -->
-Every week I build a small open-source DevSecOps tool. Shipped so far: [waflens](https://github.com/Harjeet2411/waflens) (WAF audit-log analyzer that flags likely false positives), [dockerfile-doctor](https://github.com/Harjeet2411/dockerfile-doctor) (Dockerfile security and image-size linter), [k8s-cost-peek](https://github.com/Harjeet2411/k8s-cost-peek) (Kubernetes request costs per namespace or team) and [gha-pinner](https://github.com/Harjeet2411/gha-pinner) (pins GitHub Actions to commit SHAs).
+Every week I build a small open-source DevSecOps tool. Shipped so far: [waflens](https://github.com/Harjeet2411/waflens) (WAF audit-log analyzer that flags likely false positives), [dockerfile-doctor](https://github.com/Harjeet2411/dockerfile-doctor) (Dockerfile security and image-size linter), [k8s-cost-peek](https://github.com/Harjeet2411/k8s-cost-peek) (Kubernetes request costs per namespace or team) and [gha-pinner](https://github.com/Harjeet2411/gha-pinner) (pins GitHub Actions to commit SHAs) and [tf-drift-report](https://github.com/Harjeet2411/tf-drift-report) (Terraform plan drift summary).
 <!-- WEEKLY:END -->
 
 ---
