@@ -121,6 +121,9 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 ### Recently
 
 <!-- ACTIVITY:START -->
+**Week of 23 Nov 2026**
+- Built cert-watch, the sixth weekly tool: checks TLS certificate expiry for a list of hosts, flags refused certificates, weak ciphers and servers that still accept TLS 1.0 or 1.1, and exits non-zero so CI can fail before a certificate lapses. It will be published here once its repository exists.
+
 **Week of 16 Nov 2026**
 - Built tf-drift-report, the fifth weekly tool: turns `terraform show -json` plan output into a short drift report (text or a Markdown pull request comment), lists what will be destroyed or replaced with databases and buckets first, never prints sensitive values and can fail CI on drift or destroys. It is now published as [tf-drift-report](https://github.com/Harjeet2411/tf-drift-report).
 - The algorithm visualizer's interactive canvas now redraws when its edges change, and three unused dependencies (zod, react-query, hookform resolvers) were removed. EaseMySSH shows an error instead of failing silently when Edit servers, Reload or Logs cannot run, and its CI workflow pins its actions to commit SHAs.
@@ -128,16 +131,6 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 - The algorithm visualizer's graph canvas now redraws when its size changes, and its algorithm runner resets on a stable dependency list instead of an incomplete one.
 - The algorithm visualizer's graph pages now number their exploration steps from the latest list, so a stale render can no longer repeat a step number.
 
-**Week of 9 Nov 2026**
-- Published four weekly DevSecOps tools: [waflens](https://github.com/Harjeet2411/waflens), [dockerfile-doctor](https://github.com/Harjeet2411/dockerfile-doctor), [k8s-cost-peek](https://github.com/Harjeet2411/k8s-cost-peek) and the new [gha-pinner](https://github.com/Harjeet2411/gha-pinner), which pins GitHub Actions to commit SHAs and fails CI when one is left on a tag.
-- WAF platform API: the changes list can now be filtered by status and AWS account, with a configurable limit, so older changes in one account are reachable.
-- BuildForge's agent now refuses a runner or Teams URL without http(s), negative counts and a zero timeout at startup instead of failing at the first build.
-- WAF platform API: the approvals and campaigns lists now accept a validated limit. BuildForge's Teams alert no longer titles a test failure "Test failure failure". The algorithm visualizer's graph canvas now recolours nodes when the current or explored node changes.
-- Build-Forge's agent gained tests for its `check` command and its Kiro runner client (HTTP errors, bad JSON, unreachable runner). WAF platform docs: the changelog now records the API input-validation changes, and the entity type filter lists all eight accepted types. EaseMySSH skips a background server whose log file name would collide with another's. The sorting visualizer's helpers moved out of its hook.
-- WAF platform: the sync refresh endpoint is now tested against a stale syncing status, a failed start (the lock is released) and a stuck execution (the watcher times out). Build-Forge's command line (`show`, `extract` and start-up error exits) has tests and its changelog notes the settings checks. The graph editor canvas now redraws when it is enabled or disabled, and EaseMySSH shortens a long server name in its tunnel-stopped notification so it cannot break the tray refresh.
-- WAF platform: the endpoints list now rejects an unknown `waf_status` filter instead of returning an empty list. Build-Forge's agent gained tests for log cleaning, stage detection and error fingerprints, and for its SQLite store (one incident per build, rebuild tracking, pruning, upgrading an old database).
-- The algorithm visualizer's CI now runs eslint and has `typecheck` and `lint` scripts, and EaseMySSH says "1 server" instead of "1 servers" in its window.
-- WAF platform registry no longer audits an account update that changes nothing and drops repeated regions. EaseMySSH ignores a tunnel port that two servers share and logs a tunnel it fails to stop. The algorithm visualizer's undo history and sorting views got their React state handling fixed.
 <!-- ACTIVITY:END -->
 
 ### Weekly build
