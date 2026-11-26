@@ -51,6 +51,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 |---|---|
 | [harjeetjl-portfolio](https://github.com/Harjeet2411/harjeetjl-portfolio) | My interactive 3D portfolio, [live on GitHub Pages](https://harjeet2411.github.io/harjeetjl-portfolio/) |
 | [gha-pinner](https://github.com/Harjeet2411/gha-pinner) | Pins GitHub Actions to commit SHAs and fails CI when one is left on a movable tag |
+| [cert-watch](https://github.com/Harjeet2411/cert-watch) | Checks TLS certificate expiry, weak ciphers and old TLS versions for a list of hosts and exits non-zero so CI can fail before a certificate lapses |
 | [tf-drift-report](https://github.com/Harjeet2411/tf-drift-report) | Turns `terraform show -json` plan output into a short drift report, with destroys and replaces listed first and sensitive values never printed |
 | [k8s-cost-peek](https://github.com/Harjeet2411/k8s-cost-peek) | Prices Kubernetes CPU and memory requests per namespace or team from `kubectl` output, with a CI budget check |
 | [dockerfile-doctor](https://github.com/Harjeet2411/dockerfile-doctor) | Dockerfile security and image-size linter with fix suggestions and SARIF output |
@@ -122,7 +123,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 
 <!-- ACTIVITY:START -->
 **Week of 23 Nov 2026**
-- Built cert-watch, the sixth weekly tool: checks TLS certificate expiry for a list of hosts, flags refused certificates, weak ciphers and servers that still accept TLS 1.0 or 1.1, and exits non-zero so CI can fail before a certificate lapses. It will be published here once its repository exists.
+- Built cert-watch, the sixth weekly tool: checks TLS certificate expiry for a list of hosts, flags refused certificates, weak ciphers and servers that still accept TLS 1.0 or 1.1, and exits non-zero so CI can fail before a certificate lapses. It is now published as [cert-watch](https://github.com/Harjeet2411/cert-watch).
 
 **Week of 16 Nov 2026**
 - Built tf-drift-report, the fifth weekly tool: turns `terraform show -json` plan output into a short drift report (text or a Markdown pull request comment), lists what will be destroyed or replaced with databases and buckets first, never prints sensitive values and can fail CI on drift or destroys. It is now published as [tf-drift-report](https://github.com/Harjeet2411/tf-drift-report).
@@ -136,7 +137,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 ### Weekly build
 
 <!-- WEEKLY:START -->
-Every week I build a small open-source DevSecOps tool. Shipped so far: [waflens](https://github.com/Harjeet2411/waflens) (WAF audit-log analyzer that flags likely false positives), [dockerfile-doctor](https://github.com/Harjeet2411/dockerfile-doctor) (Dockerfile security and image-size linter), [k8s-cost-peek](https://github.com/Harjeet2411/k8s-cost-peek) (Kubernetes request costs per namespace or team) and [gha-pinner](https://github.com/Harjeet2411/gha-pinner) (pins GitHub Actions to commit SHAs) and [tf-drift-report](https://github.com/Harjeet2411/tf-drift-report) (Terraform plan drift summary).
+Every week I build a small open-source DevSecOps tool. Shipped so far: [waflens](https://github.com/Harjeet2411/waflens) (WAF audit-log analyzer that flags likely false positives), [dockerfile-doctor](https://github.com/Harjeet2411/dockerfile-doctor) (Dockerfile security and image-size linter), [k8s-cost-peek](https://github.com/Harjeet2411/k8s-cost-peek) (Kubernetes request costs per namespace or team) and [gha-pinner](https://github.com/Harjeet2411/gha-pinner) (pins GitHub Actions to commit SHAs) [tf-drift-report](https://github.com/Harjeet2411/tf-drift-report) (Terraform plan drift summary) and [cert-watch](https://github.com/Harjeet2411/cert-watch) (TLS certificate expiry checks).
 <!-- WEEKLY:END -->
 
 ---
