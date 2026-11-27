@@ -124,6 +124,7 @@ Both are internal tools at KFin, so the code isn't public. Open source work:
 <!-- ACTIVITY:START -->
 **Week of 23 Nov 2026**
 - Built cert-watch, the sixth weekly tool: checks TLS certificate expiry for a list of hosts, flags refused certificates, weak ciphers and servers that still accept TLS 1.0 or 1.1, and exits non-zero so CI can fail before a certificate lapses. It is now published as [cert-watch](https://github.com/Harjeet2411/cert-watch).
+- EaseMySSH, the tray app for SSH sessions, is now a native Windows exe written in C# instead of a PowerShell script, so it runs where PowerShell is blocked. Its server list is a plain text file, and its parser and netstat reader have tests.
 
 **Week of 16 Nov 2026**
 - Built tf-drift-report, the fifth weekly tool: turns `terraform show -json` plan output into a short drift report (text or a Markdown pull request comment), lists what will be destroyed or replaced with databases and buckets first, never prints sensitive values and can fail CI on drift or destroys. It is now published as [tf-drift-report](https://github.com/Harjeet2411/tf-drift-report).
